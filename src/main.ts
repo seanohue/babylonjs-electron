@@ -10,8 +10,8 @@ async function createWindow() {
     height: 600,
     width: 800,
     webPreferences: {
-      nodeIntegration: true
-  }
+      preload: path.join(app.getAppPath(), 'renderer.js')
+    }
   });
 
   // and load the index.html of the app.

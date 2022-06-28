@@ -62,4 +62,5 @@ export default class Renderer {
 }
 
 const renderer = new Renderer();
-renderer.initialize(document.getElementById('render-canvas') as HTMLCanvasElement);
+window.renderer = renderer;
+

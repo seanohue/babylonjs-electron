@@ -25,7 +25,7 @@
 <body>
     <canvas id="render-canvas"></canvas>
     <script>
-        require('./app/renderer.js');
+        window.renderer.initialize(document.getElementById('render-canvas'));
     </script>
 </body>
 
